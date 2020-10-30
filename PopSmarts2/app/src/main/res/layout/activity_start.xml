@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POP Smarts!"
+        android:textSize="30sp"
+        android:layout_marginTop="80dp"/>
+
+    <Button
+        android:id="@+id/random"
+        android:layout_width="@dimen/startBtn_width"
+        android:layout_height="@dimen/startBtn_height"
+        android:text="RANDOM"
+        android:layout_marginTop="100dp"
+        android:onClick="startQuiz"/>
+
+    <Button
+        android:id="@+id/generalScience"
+        android:layout_width="@dimen/startBtn_width"
+        android:layout_height="@dimen/startBtn_height"
+        android:text="general science"
+        android:layout_marginTop="10dp"
+        android:onClick="startQuiz"/>
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="@dimen/startBtn_width"
+        android:layout_height="@dimen/startBtn_height"
+        android:text="history"
+        android:layout_marginTop="10dp"
+        android:onClick="startQuiz"/>
+
+    <Button
+        android:id="@+id/arts"
+        android:layout_width="@dimen/startBtn_width"
+        android:layout_height="@dimen/startBtn_height"
+        android:text="arts"
+        android:layout_marginTop="10dp"
+        android:onClick="startQuiz"/>
+
+    <Button
+        android:id="@+id/mythology"
+        android:layout_width="@dimen/startBtn_width"
+        android:layout_height="@dimen/startBtn_height"
+        android:text="mythology"
+        android:layout_marginTop="10dp"
+        android:onClick="startQuiz"/>
+
+    <Button
+        android:id="@+id/geography"
+        android:layout_width="@dimen/startBtn_width"
+        android:layout_height="@dimen/startBtn_height"
+        android:text="geography"
+        android:layout_marginTop="10dp"
+        android:onClick="startQuiz"/>
+
+</LinearLayout>
