@@ -23,6 +23,7 @@ import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
 
+    // - - > COMPONENTS DECLARATION
     private TextView countLabel;
     private TextView questionLabel;
     private Button answerBtn1;
@@ -39,9 +40,6 @@ public class MainActivity extends AppCompatActivity {
     // - - > ARRAYLIST QUIZ QUESTIONNAIRE DATABASE
     public ArrayList<Question> questionsArray = new ArrayList<>();
     public ArrayList<Question> transferArray = new ArrayList<>();
-
-    String quizData[][] = {
-    };
 
     // - - > BUILD QUESTION DATA SET
     @Override
@@ -444,7 +442,7 @@ public class MainActivity extends AppCompatActivity {
                 .setChoices("Lines", "Texture", "Shapes").setCategory("Arts").build();
         questionsArray.add(xQ);
 
-        // - - > MYTHOLOGY
+        // - - > MYTHOLOGY QUESTIONS
         xQ = new Question.QuestionBuilder().setQuestion("In Greek mythology, who is regarded as the god of the sea?").setAnswer("Poseidon")
                 .setChoices("Zeus", "Hermes", "Dionysus").setCategory("Mythology").build();
         questionsArray.add(xQ);
