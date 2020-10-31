@@ -41,72 +41,6 @@ public class MainActivity extends AppCompatActivity {
     public ArrayList<Question> transferArray = new ArrayList<>();
 
     String quizData[][] = {
-            {"St. Patrick’s day was originally associated with what color?", "Blue", "Green", "Red", "Yellow"},
-            {"_____ is considered as the “Cradle of Civilization”", "mesopotamia", "indus", "yangtze", "Babylon"},
-            {"What is the longest river in Asia?", "yangtze", "amazon", "Tigris", "Euphrates"},
-            {"The Mandate of Heaven was important to the rulers of which ancient place?", "china", "india", "persia", "crete"},
-            {"Mao Zedong is considered to be the founding father of:", "modern china", "ancient japan", "modern iran", "ottoman empire"},
-            {"The Opium War was caused by ____________ introducing opium to China.", "brittain", "india", "russia", "france"},
-            {"How many stars are there in the US flag?", "50", "48", "47", "46"},
-            {"Managua is the capital of which country?", "nicaragua", "south africa", "nigeria", "uganda"},
-            {"Where is the deepest point in the Meditteranean sea?", "ionian sea", "cilician sea", "aegan sea", "balearic sea"},
-            {"The Black Forest is located in what European country?", "germany", "france", "netherlands", "italy"},
-            {"Canada is made up of how many provinces?", "10", "16", "9", "7"},
-            {"Which country has the longest coastline in the world?", "canada", "australia", "austria", "usa"},
-            {"What is the longest river in South America?", "amazon", "nile", "yellow", "mississippi"},
-            {"What city is the capital of China?", "beijing", "wuhan", "shanghai", "guangzhou"},
-            {"In what mountain range is Mount Everest located?", "himalayas", "andes", "rocky mountains", "cascade range"},
-            {"What is the largest lake in Africa?", "lake victoria", "lake malawi", "lake turkana", "lake kivu"},
-            {"What is the largest country based on surface area?", "russia", "china", "canada", "usa"},
-            {"What is the largest island in the Caribbean sea?", "cuba", "jamaica", "puerto rico", "guam"},
-            {"How many time zones are in Canada?", "6", "2", "4", "8"},
-            {"Which city is both located in Asia and Europe?", "istanbul", "stockholm", "amsterdam", "berlin"},
-            {"What is Earth’s largest ocean by surface area?", "pacific", "atlantic", "indian", "arctic"},
-            {"What is the smallest country in the world?", "vatican city", "republic of san marino", "principality of monaco", "tuvalu"},
-            {"What is the capital of Poland?", "warsaw", "torun", "lublin", "katowice"},
-            {"What is the largest desert in the world?", "antarctic", "sahara", "arabian", "arctic"},
-            {"What is Earth’s largest continent?", "asia", "africa", "europe", "antartica"},
-            {"Which country has the most natural lakes?", "canada", "india", "usa", "china"},
-            {"Which French author wrote the novel “La dame aux camelias”?", "alexandre dumas", "emile zola", "jules verne", "victor hugo"},
-            {"Who is the author of “Da Davinci Code”?", "dan brown", "c.s. lewis", "rick riordan", "j.k. rowling"},
-            {"What was Dr. Frankenstein’s first name in the famous novel of Mary Shelly?", "victor", "hugo", "james", "dolly"},
-            {"In which city is the famous Prado museum located?", "madrid", "malaga", "pisa", "shanghai"},
-            {"Who is responsible for more than 1000 english words that is used today?", "william shakespear", "ernest hemingway", "mark twain", "george orwell"},
-            {"How many paintings did Vincent Van Gogh sell during his lifetime?", "1", "800", "193", "89"},
-            {"Who painted The Sistine Chapel?", "michelangelo", "vincent van gough", "leonardo da vnci", "calude monet"},
-            {"Who painted The Scream?", "edvard munch", "vincent van gough", "otto meuler", "pablo picasso"},
-            {"What painter was summoned to Rome in 1481 to decorate the walls of the Sistine Chapel?", "sandro boticelli", "raphael", "leonardo da vinci", "claude monet"},
-            {"Who is the art critic who coined the term \"impressionism\"?", "louis leroy", "jacob burckhardt", "john ruskin", "roger fry"},
-            {"Ludwig Van Beethoven is a famous _____ composer and pianist.", "german", "french", "italian", "polish"},
-            {"Who composed “Fur elise”?", "beethoven", "mozart", "vivaldi", "debussy"},
-            {"Which of the following is a composition of Antonio Vivaldi?", "four seasons", "turkish march", "claire de lune", "fur elise"},
-            {"Who wrote “Oliver Twist”?", "charles dickens", "mark twain", "oscar wilde", "ernest hemingway"},
-            {"In the book, Percy Jackson and the Olympians, Percy is the son of _____.", "poseidon", "zeus", "hades", "apollo"},
-            {"Which house does Hermione from Harry Potter belong to?", "gryffindor", "ravenclaw", "hufflepuff", "slytherin"},
-            {"What is the first name of Dumbledore?", "albus", "snape", "harry", "ron"},
-            {"Who wrote Percy Jackson and the Olympians?", "rick riordan", "james kinney", "j.k. rowling", "mark twain"},
-            {"Which of the following novels were written by George Orwell?", "animal farm", "for whom the bell tolls", "the pearl", "a tramp abroad"},
-            {"What is the main visual element in Impressionist painting?", "color", "lines", "texture", "shapes"},
-            {"In Greek mythology, who is regarded as the god of the sea?", "poseidon", "zeus", "hermes", "dionysus"},
-            {"Who is the Roman equivalent of the Greek goddess Enyo?", "bellona", "minerva", "juno", "vesta"},
-            {"In Greek mythology, who is the son of Zeus and Maia?", "hermes", "apollo", "poseidon", "dionysus"},
-            {"In Greek mythology, what is Medusa’s hair made of?", "snakes", "stone", "insects", "fire"},
-            {"Which mythical creature grows back two heads after a head has been cut off?", "hydra", "chimera", "satyr", "minotaur"},
-            {"In Greek mythology, who is the goddess of the rainbow?", "iris", "athena", "aphrodite", "persephone"},
-            {"Which mythical creature is half-man and half-bull?", "minotaur", "centaur", "satyr", "hydra"},
-            {"What was the Greek hero Achilles’ only vulnerable part?", "heel", "neck", "head", "eye"},
-            {"In Egyptian mythology, Osiris is a god of?", "justice", "sun", "moon", "thieves"},
-            {"What was the first god called in Egyptian mythology?", "atum", "osiris", "horus", "ra"},
-            {"In Egyptian mythology, which god rules over the underworld?", "anubis", "seth", "horus", "isis"},
-            {"What form did the gods and goddesses of ancient Egypt typically take?", "animals", "plants", "humans", "statues"},
-            {"Which Egyptian god was considered the most powerful and important?", "ra", "thoth", "horus", "atum"},
-            {"Who is the primary, father god in Norse mythology?", "odin", "frey", "thor", "omega"},
-            {"In Norse mythology, who is the god of thunder and lightning?", "thor", "odin", "loki", "frey"},
-            {"Which day of the week is named for the Norse god Odin?", "wednesday", "thursday", "monday", "tuesday"},
-            {"What is the name of Thor’s magical hammer?", "mjolnir", "orcsbane", "sleipnir", "gungnir"},
-            {"According to Norse mythology, where do the heroes who die in battle go to rest?", "valhalla", "asgard", "midgard", "niffleheim"},
-            {"In Norse mythology, who is the god of justice and war?", "tyr", "fafnir", "frey", "heimdall"},
-            {"In Norse mythology, who was the faithful steed of Odin?", "sleipnir", "kelnir", "valnyr", "fystnir"},
     };
 
     // - - > BUILD QUESTION DATA SET
@@ -154,25 +88,25 @@ public class MainActivity extends AppCompatActivity {
                     transferArray.add(question);
                 }
             }
-        }else if(quizCategory == 3){
+        }else if(quizCategory == 3){ // HISTORY
             for(Question question:questionsArray){
                 if(question.getCategory().equals("History") && question != null){
                     transferArray.add(question);
                 }
             }
-        }else if(quizCategory == 4){
+        }else if(quizCategory == 4){ // ARTS
             for(Question question:questionsArray){
                 if(question.getCategory().equals("Arts") && question != null){
                     transferArray.add(question);
                 }
             }
-        }else if(quizCategory == 5){
+        }else if(quizCategory == 5){ // MYTHOLOGY
             for(Question question:questionsArray){
                 if(question.getCategory().equals("Mythology") && question != null){
                     transferArray.add(question);
                 }
             }
-        }else{
+        }else{ // GEOGRAPHY
             for(Question question:questionsArray){
                 if(question.getCategory().equals("Geography") && question != null){
                     transferArray.add(question);
@@ -186,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
     public void initiateQuestions(){
         Question xQ;
 
+        // - - > SCIENCE QUESTIONS
         xQ = new Question.QuestionBuilder().setQuestion("Which of these elements has an atomic number of 8?").setAnswer("Oxygen")
                 .setChoices("Hydrogen", "Silicon", "Helium").setCategory("generalScience").build();
         questionsArray.add(xQ);
@@ -198,13 +133,12 @@ public class MainActivity extends AppCompatActivity {
                 .setChoices("Spiders", "Ants", "Roaches").setCategory("generalScience").build();
         questionsArray.add(xQ);
 
-
         xQ = new Question.QuestionBuilder().setQuestion("What is the first element in the Periodic Table?").setAnswer("Hydrogen")
                 .setChoices("Oxygen", "Lithium", "Helium").setCategory("generalScience").build();
         questionsArray.add(xQ);
 
         xQ = new Question.QuestionBuilder().setQuestion("Where was Albert Einstein born?").setAnswer("Germany")
-                .setChoices("France", "USA", "Poland").setCategory("History").build();
+                .setChoices("France", "USA", "Poland").setCategory("generalScience").build();
         questionsArray.add(xQ);
 
         xQ = new Question.QuestionBuilder().setQuestion("What is the most abundant element in the Earth’s crust?").setAnswer("Oxygen")
@@ -224,15 +158,15 @@ public class MainActivity extends AppCompatActivity {
         questionsArray.add(xQ);
 
         xQ = new Question.QuestionBuilder().setQuestion("Which of the following scientists was born first?").setAnswer("Copernicus")
-                .setChoices("Galileo", "Kepler", "Einstein").setCategory("History").build();
+                .setChoices("Galileo", "Kepler", "Einstein").setCategory("generalScience").build();
         questionsArray.add(xQ);
 
         xQ = new Question.QuestionBuilder().setQuestion("Marie Curie is known for discovering what element _____.").setAnswer("Radium")
-                .setChoices("Titanium", "Magnesium", "Manganese").setCategory("History").build();
+                .setChoices("Titanium", "Magnesium", "Manganese").setCategory("generalScience").build();
         questionsArray.add(xQ);
 
         xQ = new Question.QuestionBuilder().setQuestion("What is the name of Marie Curie’s husband?").setAnswer("Pierre")
-                .setChoices("Philip", "James", "Howard").setCategory("History").build();
+                .setChoices("Philip", "James", "Howard").setCategory("generalScience").build();
         questionsArray.add(xQ);
 
         xQ = new Question.QuestionBuilder().setQuestion("Who is the father of Taxonomy?").setAnswer("Linnaeus")
@@ -240,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
         questionsArray.add(xQ);
 
         xQ = new Question.QuestionBuilder().setQuestion("Which of the following categories does not belong to the official categories of the Nobel Prize?").setAnswer("Biology")
-                .setChoices("Physics", "Chemistry", "Medicine").setCategory("History").build();
+                .setChoices("Physics", "Chemistry", "Medicine").setCategory("generalScience").build();
         questionsArray.add(xQ);
 
         xQ = new Question.QuestionBuilder().setQuestion("How long does it take for the Earth to spin once on its axis?").setAnswer("1 Day")
@@ -256,17 +190,18 @@ public class MainActivity extends AppCompatActivity {
         questionsArray.add(xQ);
 
         xQ = new Question.QuestionBuilder().setQuestion("The Big Bang Theory was first introduced by _____ in the 1920s.").setAnswer("Georges Lemaitre")
-                .setChoices("Bill Prady", "Chuck Lorre", "Charles Darwin").setCategory("History").build();
+                .setChoices("Bill Prady", "Chuck Lorre", "Charles Darwin").setCategory("generalScience").build();
         questionsArray.add(xQ);
 
         xQ = new Question.QuestionBuilder().setQuestion("Marie Curie was _____ by birth.").setAnswer("Polish")
-                .setChoices("French", "German", "Swedish").setCategory("History").build();
+                .setChoices("French", "German", "Swedish").setCategory("generalScience").build();
         questionsArray.add(xQ);
 
         xQ = new Question.QuestionBuilder().setQuestion("Which scientist discovered Selenium and Cerium?").setAnswer("Berzelius")
-                .setChoices("Lawrence", "Mendeleev", "Burbank").setCategory("History").build();
+                .setChoices("Lawrence", "Mendeleev", "Burbank").setCategory("generalScience").build();
         questionsArray.add(xQ);
 
+        // - - > HISTORY QUESTIONS
         xQ = new Question.QuestionBuilder().setQuestion("Who was the mother of Mary I of England?").setAnswer("Catherine of Aragon")
                 .setChoices("Jane Seymour", "Anne of Cleves", "Anne Boleyn").setCategory("History").build();
         questionsArray.add(xQ);
@@ -322,6 +257,273 @@ public class MainActivity extends AppCompatActivity {
         xQ = new Question.QuestionBuilder().setQuestion("Osama Bin Laden was killed under the order of President _____.").setAnswer("Obama")
                 .setChoices("Clinton", "Bush", "Trump").setCategory("History").build();
         questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("St. Patrick’s day was originally associated with what color?").setAnswer("Blue")
+                .setChoices("Green", "Red", "Yellow").setCategory("History").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("_____ is considered as the “Cradle of Civilization”").setAnswer("Mesopotamia")
+                .setChoices("Indus", "Yangtze", "Babylon").setCategory("History").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What is the longest river in Asia?").setAnswer("Yangtze")
+                .setChoices("Amazon", "Tigris", "Euphrates").setCategory("History").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("The Mandate of Heaven was important to the rulers of which ancient place?").setAnswer("China")
+                .setChoices("India", "Persia", "Crete").setCategory("History").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Mao Zedong is considered to be the founding father of:").setAnswer("Modern China")
+                .setChoices("Ancient Japan", "Modern Iran", "Ottoman Empire").setCategory("History").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("The Opium War was caused by ____________ introducing opium to China.").setAnswer("Britain")
+                .setChoices("India", "Russia", "France").setCategory("History").build();
+        questionsArray.add(xQ);
+
+        // - - > GEOLOGY QUESTIONS
+        xQ = new Question.QuestionBuilder().setQuestion("How many stars are there in the US flag?").setAnswer("50")
+                .setChoices("48", "47", "46").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Managua is the capital of which country?").setAnswer("Nicaragua")
+                .setChoices("South Africa", "Nigeria", "Uganda").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Where is the deepest point in the Mediterranean sea?").setAnswer("Ionian Sea")
+                .setChoices("Cilician Sea", "Aegean Sea", "Balearic Sea").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("The Black Forest is located in what European country?").setAnswer("Germany")
+                .setChoices("France", "Netherlands", "Italy").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Canada is made up of how many provinces?").setAnswer("10")
+                .setChoices("16", "9", "7").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Which country has the longest coastline in the world?").setAnswer("Canada")
+                .setChoices("Australia", "Austria", "USA").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What is the longest river in South America?").setAnswer("Amazon")
+                .setChoices("Nile", "Yellow", "Mississippi").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What city is the capital of China?").setAnswer("Beijing")
+                .setChoices("Wuhan", "Shanghai", "Guangzhou").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("In what mountain range is Mount Everest located?").setAnswer("Himalayas")
+                .setChoices("Andes", "Rocky Mountains", "Cascade Range").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What is the largest lake in Africa?").setAnswer("Lake Victoria")
+                .setChoices("Lake Malawi", "Lake Turkana", "Lake Kivu").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What is the largest country based on surface area?").setAnswer("Russia")
+                .setChoices("China", "Canada", "USA").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What is the largest island in the Caribbean sea?").setAnswer("Cuba")
+                .setChoices("Jamaica", "Puerto Rico", "Guam").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("How many time zones are in Canada?").setAnswer("6")
+                .setChoices("2", "4", "8").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Which city is both located in Asia and Europe?").setAnswer("Istanbul")
+                .setChoices("Stockholm", "Amsterdam", "Berlin").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What is Earth’s largest ocean by surface area?").setAnswer("Pacific")
+                .setChoices("Atlantic", "Indian", "Arctic").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What is the smallest country in the world?").setAnswer("Vatican City")
+                .setChoices("Republic of San Marino", "Principality of Monaco", "Tuvalu").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What is the capital of Poland?").setAnswer("Warsaw")
+                .setChoices("Torun", "Lublin", "Katowice").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What is the largest desert in the world?").setAnswer("Antarctic")
+                .setChoices("Sahara", "Arabian", "Arctic").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What is Earth’s largest continent?").setAnswer("Asia")
+                .setChoices("Africa", "Europe", "Antartica").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Which country has the most natural lakes?").setAnswer("Canada")
+                .setChoices("India", "USA", "China").setCategory("Geography").build();
+        questionsArray.add(xQ);
+
+        // - - > ARTS QUESTIONS
+        xQ = new Question.QuestionBuilder().setQuestion("Which French author wrote the novel “La dame aux camelias”").setAnswer("Alexandre Dumas")
+                .setChoices("Emile Zola", "Jules Verne", "Victor Hugo").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Who is the author of “Da Davinci Code”?").setAnswer("Dan Brown")
+                .setChoices("C.S. Lewis", "Rick Riordan", "J.K. Rowling").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What was Dr. Frankenstein’s first name in the famous novel of Mary Shelly?").setAnswer("Victor")
+                .setChoices("Hugo", "James", "Dolly").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("In which city is the famous Prado museum located?").setAnswer("Madrid")
+                .setChoices("Malaga", "Pisa", "Shanghai").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Who is responsible for more than 1000 english words that is used today?").setAnswer("William Shakespeare")
+                .setChoices("Ernest Hemingway", "Mark Twain", "George Orwell").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("How many paintings did Vincent Van Gogh sell during his lifetime?").setAnswer("1")
+                .setChoices("800", "193", "89").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Who painted The Sistine Chapel?").setAnswer("Michelangelo")
+                .setChoices("Vincent van Gogh", "Leonardo da Vinci", "Calude Monet").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Who painted The Scream?").setAnswer("Edvard Munch")
+                .setChoices("Vincent van Gogh", "Otto Meuler", "Pablo Picasso").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What painter was summoned to Rome in 1481 to decorate the walls of the Sistine Chapel?").setAnswer("Sandro Boticelli")
+                .setChoices("Raphael", "Leonardo da Vinci", "Claude Monet").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Who is the art critic who coined the term \"impressionism\"").setAnswer("Louis Leroy")
+                .setChoices("Jacob Burckhardt", "John Ruskin", "Roger Fry").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Ludwig Van Beethoven is a famous _____ composer and pianist.").setAnswer("German")
+                .setChoices("French", "Italian", "Polish").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Who composed “Fur elise”?").setAnswer("Beethoven")
+                .setChoices("Mozart", "Vivaldi", "Debussy").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("WWhich of the following is a composition of Antonio Vivaldi?").setAnswer("Four Seasons")
+                .setChoices("Turkish March", "Claire de Lune", "Fur Elise").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Who wrote “Oliver Twist”?").setAnswer("Charles Dickens")
+                .setChoices("Mark Twain", "Oscar Wilde", "Ernest Hemingway").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("In the book, Percy Jackson and the Olympians, Percy is the son of _____.").setAnswer("Poseidon")
+                .setChoices("Zeus", "Hades", "Apollo").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Which house does Hermione from Harry Potter belong to?").setAnswer("Gryffindor")
+                .setChoices("Ravenclaw", "Hufflepuff", "Slytherin").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What is the first name of Dumbledore?").setAnswer("Albus")
+                .setChoices("Snape", "Harry", "Ron").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Who wrote Percy Jackson and the Olympians?").setAnswer("Rick Riordan")
+                .setChoices("James Kinney", "J.K. Rowling", "Mark Twain").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Which of the following novels were written by George Orwell?").setAnswer("Animal Farm")
+                .setChoices("For whom the bell tolls", "The Pearl", "A Tramp Abroad").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What is the main visual element in Impressionist painting?").setAnswer("Color")
+                .setChoices("Lines", "Texture", "Shapes").setCategory("Arts").build();
+        questionsArray.add(xQ);
+
+        // - - > MYTHOLOGY
+        xQ = new Question.QuestionBuilder().setQuestion("In Greek mythology, who is regarded as the god of the sea?").setAnswer("Poseidon")
+                .setChoices("Zeus", "Hermes", "Dionysus").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Who is the Roman equivalent of the Greek goddess Enyo?").setAnswer("Bellona")
+                .setChoices("Minerva", "Juno", "Vesta").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("In Greek mythology, who is the son of Zeus and Maia?").setAnswer("Hermes")
+                .setChoices("Apollo", "Poseidon", "Dionysus").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("In Greek mythology, what is Medusa’s hair made of?").setAnswer("Snakes")
+                .setChoices("Stone", "Insects", "Fire").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Which mythical creature grows back two heads after a head has been cut off?").setAnswer("Hydra")
+                .setChoices("Chimera", "Satyr", "Minotaur").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("In Greek mythology, who is the goddess of the rainbow?").setAnswer("Iris")
+                .setChoices("Athena", "Aphrodite", "Persephone").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Which mythical creature is half-man and half-bull?").setAnswer("Minotaur")
+                .setChoices("Centaur", "Satyr", "Hydra").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What was the Greek hero Achilles’ only vulnerable part?").setAnswer("Heel")
+                .setChoices("Neck", "Head", "Eye").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("In Egyptian mythology, Osiris is a god of?").setAnswer("Justice")
+                .setChoices("Sun", "Moon", "Thieves").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What was the first god called in Egyptian mythology?").setAnswer("Atum")
+                .setChoices("Osiris", "Horus", "Ra").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("In Egyptian mythology, which god rules over the underworld?").setAnswer("Anubis")
+                .setChoices("Seth", "Horus", "Isis").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What form did the gods and goddesses of ancient Egypt typically take?").setAnswer("Animals")
+                .setChoices("Plants", "Humans", "Statues").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Which Egyptian god was considered the most powerful and important?").setAnswer("Ra")
+                .setChoices("Thoth", "Horus", "Atum").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Who is the primary, father god in Norse mythology?").setAnswer("Odin")
+                .setChoices("Frey", "Thor", "Omega").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("In Norse mythology, who is the god of thunder and lightning?").setAnswer("Thor")
+                .setChoices("Odin", "Loki", "Frey").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("Which day of the week is named for the Norse god Odin?").setAnswer("Wednesday")
+                .setChoices("Thursday", "Monday", "Tuesday").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("What is the name of Thor’s magical hammer?").setAnswer("Mjolnir")
+                .setChoices("Orcsbane", "Sleipnir", "Gungnir").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("According to Norse mythology, where do the heroes who die in battle go to rest?").setAnswer("Valhalla")
+                .setChoices("Asgard", "Midgard", "Niffleheim").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("In Norse mythology, who is the god of justice and war?").setAnswer("Tyr")
+                .setChoices("Fafnir", "Frey", "Heimdall").setCategory("Mythology").build();
+        questionsArray.add(xQ);
+
+        xQ = new Question.QuestionBuilder().setQuestion("In Norse mythology, who was the faithful steed of Odin?").setAnswer("Sleipnir")
+                .setChoices("Kelnir", "Valnyr", "Fystnir").setCategory("Mythology").build();
+        questionsArray.add(xQ);
     }
 
     public void showNextQuiz(){
@@ -331,7 +533,7 @@ public class MainActivity extends AppCompatActivity {
 
         // - - > TEST
         for(Question test:transferArray){
-            Log.i("TEST", test.getQuestion() + " | " + test.getAnswer());
+            Log.i("TEST", test.getQuestion() + " | " + test.getAnswer() + " | " + test.getCategory());
         }
         Log.i("COUNT", String.valueOf(Integer.parseInt(String.valueOf(transferArray.size()))));
 
