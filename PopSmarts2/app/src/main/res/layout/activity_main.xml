@@ -100,7 +100,7 @@
         android:textColor="@color/btnText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/answerBtn1" />
+        app:layout_constraintTop_toBottomOf="@+id/answerBtn1"/>
 
     <Button
         android:id="@+id/answerBtn3"
