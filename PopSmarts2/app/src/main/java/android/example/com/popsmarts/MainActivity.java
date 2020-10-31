@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -566,17 +567,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void checkAnswer(View view){
 
-        //button when clicked
+        // - - > INITIALIZE SOUND EFFECTS ONCLICK
+        final MediaPlayer correctMp = MediaPlayer.create(this, R.raw.correctsfx);
+        final MediaPlayer wrongMp = MediaPlayer.create(this, R.raw.wrongsfx);
+
+        // - - > BUTTON WHEN CLICKED
         Button answerBtn =(Button)findViewById(view.getId());
         String btnText = answerBtn.getText().toString();
-
         String alertTitle;
 
         if (btnText.equals(rightAnswer)) {
+            correctMp.start();
             alertTitle = "Good Job!";
             rightAnswerCount++;
-        }
-        else{
+        }else{
+            wrongMp.start();
             alertTitle = "Oops! That's wrong.";
         }
 
@@ -587,11 +592,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 if (quizCount == QUIZ_COUNT) {
-
                     Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
                     intent.putExtra("RIGHT_ANSWER_COUNT", rightAnswerCount);
                     startActivity(intent);
-
                 } else {
                     quizCount++;
                     showNextQuiz();
