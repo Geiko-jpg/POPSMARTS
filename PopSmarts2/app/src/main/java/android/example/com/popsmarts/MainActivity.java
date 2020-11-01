@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
@@ -58,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
         answerBtn3 = (Button) findViewById(R.id.answerBtn3);
         answerBtn4 = (Button) findViewById(R.id.answerBtn4);
 
+        Typeface font = Typeface.createFromAsset(getApplicationContext().getAssets(),"fonts/Montserrat-Regular.ttf");
+        answerBtn1.setTypeface(font);
+        answerBtn2.setTypeface(font);
+        answerBtn3.setTypeface(font);
+        answerBtn4.setTypeface(font);
+      
         // - - > INITIATE THE SET OF QUESTIONS
         myDb = new DBQuestionHelper(this);
         myDb.refreshDB();
@@ -124,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
     public void showNextQuiz(){
 
         // - - > UPDATE COUNT LABEL
-        countLabel.setText("Q" + quizCount);
+        countLabel.setText("QUESTION " + quizCount);
 
         // - - > TEST
         for(Question test:transferArray){
