@@ -38,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
     static final private int QUIZ_COUNT = 20;
     public int quizCategory;
 
+    // - - > MYSQLITE DATABASE COMPONENTS
+    private DBQuestionHelper myDb;
+
     // - - > ARRAYLIST QUIZ QUESTIONNAIRE DATABASE
     public ArrayList<Question> questionsArray = new ArrayList<>();
     public ArrayList<Question> transferArray = new ArrayList<>();
@@ -48,12 +51,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // - - > INITIATE THE SET OF QUESTIONS
-        for(Question test:questionsArray){
-            Log.i("TEST", test.getAnswer());
-        }
-        initiateQuestions();
-
         countLabel = (TextView)findViewById(R.id.countLabel);
         questionLabel = (TextView)findViewById(R.id.questionLabel);
         answerBtn1 = (Button) findViewById(R.id.answerBtn1);
@@ -61,9 +58,17 @@ public class MainActivity extends AppCompatActivity {
         answerBtn3 = (Button) findViewById(R.id.answerBtn3);
         answerBtn4 = (Button) findViewById(R.id.answerBtn4);
 
-        quizCategory = getIntent().getIntExtra("QUIZ_CATEGORY", 0);
+        // - - > INITIATE THE SET OF QUESTIONS
+        myDb = new DBQuestionHelper(this);
+        myDb.refreshDB();
+
+        questionsArray = myDb.getAllQuestions();
+        for(Question test:questionsArray){
+            Log.i("TEST", test.getAnswer());
+        }
 
         // - - > FILTERING CATEGORY
+        quizCategory = getIntent().getIntExtra("QUIZ_CATEGORY", 0);
         if(quizCategory == 1){ // RANDOM
             ArrayList<Integer>transfer = new ArrayList<>(20);
             Random rng = new Random();
