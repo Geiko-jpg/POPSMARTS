@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ResultActivity" />
+        <service android:enabled="true" android:name=".QBBackgroundMSetter" />
         <activity android:name=".MainActivity">
         </activity>
     </application>

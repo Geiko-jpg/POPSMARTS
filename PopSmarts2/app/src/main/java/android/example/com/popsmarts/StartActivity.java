@@ -15,6 +15,10 @@ public class StartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
+        // - - > INITIALIZE BACKGROUND MUSIC
+        Intent intent = new Intent(this, QBBackgroundMSetter.class);
+        startService(intent);
+
         MainActivity test = new MainActivity();
         for(Question testQ:test.questionsArray){
             Log.i("TEST", testQ.getAnswer());
