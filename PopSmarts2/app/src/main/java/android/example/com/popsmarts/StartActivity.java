@@ -59,5 +59,4 @@ public class StartActivity extends AppCompatActivity {
         intent.putExtra("QUIZ_CATEGORY", quizCategory);
         startActivity(intent);
     }
-
 }
