@@ -15,6 +15,7 @@ import java.util.List;
 
 public class StartActivity extends AppCompatActivity {
     public MainActivity connector = new MainActivity();
+    private static final String TEST_KEY = "TEST";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,17 +75,13 @@ public class StartActivity extends AppCompatActivity {
         Log.i("TEST", "ACTIVITY START");
         if(mp != null){
             try{
-                if(mp.isPlaying()){
-                    mp.stop();
+                if(!mp.isPlaying()){
+                    mp.start();
+                    Log.i(TEST_KEY, "RESUME PLAYING");
                 }
             }catch(IllegalStateException ise){
                 ise.printStackTrace();
             }
-            mp = MediaPlayer.create(this, R.raw.quizbeeg);
-            mp.setLooping(true);
-            mp.setVolume(100, 100);
-            mp.start();
-            QBBackgroundMSetter.backgroundMusic = mp;
         }
     }
 
@@ -101,10 +98,10 @@ public class StartActivity extends AppCompatActivity {
             ComponentName topActivity = taskInfo.get(0).topActivity;
             if(!topActivity.getPackageName().equals(context.getPackageName())){
                 try{
-                    mp.stop();
-                    mp.release();
+                    mp.pause();
+                    Log.i(TEST_KEY,"SONG PAUSED");
                 }catch(NullPointerException ne){
-                    // pass
+                    ne.printStackTrace();
                 }
                 Log.i("TEST","EXITS APP");
             }else{
