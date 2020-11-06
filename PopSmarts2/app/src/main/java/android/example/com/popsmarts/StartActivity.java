@@ -26,7 +26,6 @@ public class StartActivity extends AppCompatActivity {
         Intent intent = new Intent(this, QBBackgroundMSetter.class);
         startService(intent);
 
-
         MainActivity test = new MainActivity();
         for(Question testQ:test.questionsArray){
             Log.i("TEST", testQ.getAnswer());
