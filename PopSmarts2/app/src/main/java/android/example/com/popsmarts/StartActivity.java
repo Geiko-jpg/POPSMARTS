@@ -67,6 +67,7 @@ public class StartActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         intent.putExtra("QUIZ_CATEGORY", quizCategory);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_up_in, R.anim.slide_up_out);
     }
 
     @Override
