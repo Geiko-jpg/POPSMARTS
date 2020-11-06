@@ -10,7 +10,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="196dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="RESULT"
@@ -22,7 +22,7 @@
         android:id="@+id/resultLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="30dp"
         android:text="3 / 5"
         android:textSize="50sp"
         android:textColor="@color/btnText"
@@ -30,10 +30,10 @@
 
     <TextView
         android:id="@+id/messageLabel"
-        android:layout_width="114dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:text="Message"
         android:textSize="30sp"
         android:textColor="@color/btnText"
@@ -41,9 +41,9 @@
 
     <TextView
         android:id="@+id/totalScoreLabel"
-        android:layout_width="272dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:text="Total Score : 333"
         android:textSize="40sp"
         android:textColor="@color/btnText"
@@ -52,7 +52,7 @@
     <Button
         android:layout_width="140dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40sp"
+        android:layout_marginTop="60sp"
         android:background="@drawable/btn_bg"
         android:onClick="returnTop"
         android:text="return"
