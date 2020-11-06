@@ -26,6 +26,7 @@ public class ResultActivity extends AppCompatActivity {
 
         TextView resultLabel = (TextView)findViewById(R.id.resultLabel);
         TextView totalScoreLabel = (TextView)findViewById(R.id.totalScoreLabel);
+        TextView messageLabel = (TextView)findViewById(R.id.messageLabel);
 
         int score = getIntent().getIntExtra("RIGHT_ANSWER_COUNT", 0);
 
@@ -35,6 +36,32 @@ public class ResultActivity extends AppCompatActivity {
 
         resultLabel.setText(score + " / 20");
         totalScoreLabel.setText("Total Score: "+ totalScore);
+
+        if(score >= 1 && score <= 5)
+        {
+            messageLabel.setText("Poor!");
+        }
+        else if(score >= 6 && score <= 10)
+        {
+            messageLabel.setText("Still Needs Improvement!");
+        }
+        else if(score >= 11 && score <= 15)
+        {
+            messageLabel.setText("You're Getting There!");
+        }
+        else if(score >= 16 && score <= 19)
+        {
+            messageLabel.setText("You're Doing Great!");
+        }
+        else if(score == 20)
+        {
+            messageLabel.setText("Perfect!");
+        }
+        else
+        {
+            messageLabel.setText("No Answers!");
+        }
+
 
         SharedPreferences.Editor editor = settings.edit();
         editor.putInt("totalScore", totalScore);

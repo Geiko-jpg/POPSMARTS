@@ -63,6 +63,7 @@ public class StartActivity extends AppCompatActivity {
                 quizCategory=6;
                 break;
 
+
         }
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         intent.putExtra("QUIZ_CATEGORY", quizCategory);
@@ -112,4 +113,10 @@ public class StartActivity extends AppCompatActivity {
         }
         super.onPause();
     }
+
+    public void clickexit(View v)
+    {
+        moveTaskToBack(true);
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(1);}
 }
