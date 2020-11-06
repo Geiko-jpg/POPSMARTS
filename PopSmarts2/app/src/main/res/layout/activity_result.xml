@@ -19,7 +19,7 @@
 
     <TextView
         android:id="@+id/resultLabel"
-        android:layout_width="168dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="3 / 5"
