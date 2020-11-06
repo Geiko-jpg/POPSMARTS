@@ -208,6 +208,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
                     intent.putExtra("RIGHT_ANSWER_COUNT", rightAnswerCount);
                     startActivity(intent);
+                    overridePendingTransition(R.anim.slide_up_in, R.anim.slide_up_out);
                 } else {
                     quizCount++;
                     showNextQuiz();

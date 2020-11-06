@@ -46,6 +46,7 @@ public class ResultActivity extends AppCompatActivity {
 
         Intent intent = new Intent(getApplicationContext(), StartActivity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.slide_up_in, R.anim.slide_up_out);
 
     }
 
