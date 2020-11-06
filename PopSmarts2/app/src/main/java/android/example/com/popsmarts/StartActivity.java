@@ -15,7 +15,7 @@ import java.util.List;
 
 public class StartActivity extends AppCompatActivity {
     public MainActivity connector = new MainActivity();
-    private static final String TEST_KEY = "TEST";
+    public static final String TEST_KEY = "TEST";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

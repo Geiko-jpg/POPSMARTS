@@ -2,13 +2,18 @@ package android.example.com.popsmarts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActivityManager;
 import android.app.AlertDialog;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -20,6 +25,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
@@ -45,6 +51,9 @@ public class MainActivity extends AppCompatActivity {
     // - - > ARRAYLIST QUIZ QUESTIONNAIRE DATABASE
     public ArrayList<Question> questionsArray = new ArrayList<>();
     public ArrayList<Question> transferArray = new ArrayList<>();
+
+    // - - > COLOR DECLARATION
+    final int color = Color.parseColor("#a8220a");
 
     // - - > BUILD QUESTION DATA SET
     @Override
@@ -169,7 +178,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void checkAnswer(View view){
-
         // - - > INITIALIZE SOUND EFFECTS ONCLICK
         final MediaPlayer correctMp = MediaPlayer.create(this, R.raw.correctsfx);
         final MediaPlayer wrongMp = MediaPlayer.create(this, R.raw.wrongsfx);
@@ -208,4 +216,40 @@ public class MainActivity extends AppCompatActivity {
         builder.show();
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        MediaPlayer mp = QBBackgroundMSetter.backgroundMusic;
+        if(mp != null){
+            try{
+                if(!mp.isPlaying()){
+                    mp.start();
+                    Log.i(StartActivity.TEST_KEY, "SONG RESUMED");
+                }
+            }catch(IllegalStateException ise){
+                ise.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MediaPlayer mp = QBBackgroundMSetter.backgroundMusic;
+        Context context = getApplicationContext();
+        ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        List<ActivityManager.RunningTaskInfo> taskInfo = am.getRunningTasks(1);
+        if(!taskInfo.isEmpty()){
+            ComponentName topActivity = taskInfo.get(0).topActivity;
+            if(!topActivity.getPackageName().equals(context.getPackageName())){
+                try{
+                    Log.i("TEST", "APP EXIT");
+                    mp.pause();
+                    Log.i("TEST", "SONG PAUSED");
+                }catch(NullPointerException npe){
+                    npe.printStackTrace();
+                }
+            }
+        }
+    }
 }
