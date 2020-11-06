@@ -6,37 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".ResultActivity"
     android:gravity="center_horizontal"
+    android:background="@drawable/bg_inverted"
     android:orientation="vertical">
-    
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="196dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:text="RESULT"
-        android:textSize="20sp"
-        android:layout_marginTop="50dp"/>
+        android:textSize="80sp"
+        app:fontFamily="@font/bangers" />
 
     <TextView
         android:id="@+id/resultLabel"
-        android:layout_width="wrap_content"
+        android:layout_width="168dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:text="3 / 5"
+        android:textSize="50sp"
+        app:fontFamily="@font/bangers" />
+
+    <TextView
+        android:id="@+id/messageLabel"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="Message"
         android:textSize="30sp"
-        android:layout_marginTop="60dp"/>
+        app:fontFamily="@font/bangers" />
 
     <TextView
         android:id="@+id/totalScoreLabel"
-        android:layout_width="wrap_content"
+        android:layout_width="272dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:text="Total Score : 333"
-        android:textSize="20sp"
-        android:layout_marginTop="60dp"/>
+        android:textSize="40sp"
+        app:fontFamily="@font/bangers" />
 
     <Button
         android:layout_width="140dp"
         android:layout_height="50dp"
+        android:layout_marginTop="40sp"
+        android:background="@drawable/btn_bg"
+        android:onClick="returnTop"
         android:text="return"
-        android:textSize="18sp"
-        android:layout_marginTop="80dp"
-        android:onClick="returnTop"/>
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
 
 </LinearLayout>
